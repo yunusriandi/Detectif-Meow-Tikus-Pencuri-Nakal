@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+@keyframes float-gentle {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(1deg);
+  }
+}
+
+@keyframes wiggle-playful {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-6deg);
+  }
+  75% {
+    transform: rotate(6deg);
+  }
+}
+
+@keyframes chest-bounce {
+  0% { transform: scale(0.9) rotate(-3deg); }
+  50% { transform: scale(1.1) rotate(3deg); }
+  100% { transform: scale(1) rotate(0deg); }
+}
+
+@keyframes key-float {
+  0% { transform: translateY(0px) scale(0.8); opacity: 0; }
+  50% { transform: translateY(-30px) scale(1.2); opacity: 1; }
+  100% { transform: translateY(0px) scale(1); opacity: 1; }
+}
+
+.animate-float-gentle {
+  animation: float-gentle 3.5s ease-in-out infinite;
+}
+
+.animate-wiggle-playful {
+  animation: wiggle-playful 1s ease-in-out infinite;
+}
+
+.animate-chest-bounce {
+  animation: chest-bounce 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.animate-key-float {
+  animation: key-float 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}

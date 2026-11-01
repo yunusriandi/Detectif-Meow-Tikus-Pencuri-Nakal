@@ -1,0 +1,6 @@
+{
+  "name": "Detektif Meow: Jejak Tikus Nakal",
+  "description": "Game edukasi kata rumpang interaktif untuk siswa SD Kelas 1 & 2 (Fase A) bersama Detektif Meow memecahkan jejak Tikus Nakal, dilengkapi Panel Editor Kata untuk Guru.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
